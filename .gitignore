@@ -1,2 +1,2 @@
 #ignore files used to test on w3schools' xml/xsl tool
-w3_*.txt
+*w3*
