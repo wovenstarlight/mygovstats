@@ -3,4 +3,39 @@
 <?xml-stylesheet type="text/css" href="css/mygov-stats.css"?>
 
 <statistics>
+	<!-- SECTION: GENERAL -->
+	<genBlock>
+		<class>apis</class>
+		<field>
+			<label>Restful APIs</label>
+			<content>JSON &amp; XML</content>
+		</field>
+		<field>
+			<label>CRUD Operations</label>
+			<content>Apps-Specific API Keys</content>
+		</field>
+		<note>MyGov Open APIs Documentation &amp; Developer Support (developers.mygov.in)</note>
+	</genBlock>
+	
+	<genBlock>
+		<class>members</class>
+		<field>
+			<label>MyGov Members</label>
+			<content>18734 K</content>
+		</field>
+	</genBlock>
+	
+	<genBlock>
+		<class>sso</class>
+		<note>MyGov Auth Single Sign On Social Login Integration</note>
+	</genBlock>
+
+	<genBlock>
+		<class>apps</class>
+		<field>
+			<label>Mobile Apps</label>
+			<content>MyGov (iOS, Android)</content>
+			<content>PMO App</content>
+		</field>
+	</genBlock>
 </statistics>
