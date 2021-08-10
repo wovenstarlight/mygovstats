@@ -4,20 +4,23 @@
 <?xml-stylesheet type="text/css" href="format/mygovstats.css"?>
 
 <statistics>
+	<!-- All <block> elements contain visually distinct sections/divs of content.
+	See each section's header comments for more information on each block type. -->
+
 	<!-- SECTION: GENERAL
 	These are the sections at the very top of the page, under the heading.
-	The information in the genBlocks is text-only, and does not contain any numerical statistics.
+	The information in the general <block>s is text-only, and does not contain any numerical statistics.
 	-->
 	
 	<!-- Format notes:
-	Generally, the genBlock sections use two main types of tags: <field>s and <note>s.
+	The general <block> sections use two main types of tags: <field>s and <note>s.
 	A <field> contains a <label> and <content> and is used for 2-part information,
 	like a key-value pair. e.g. "App used: AppName" is a label-content pair.
 	A <note> is a statement of text that fits in one line with no separation.
 	e.g. "We used AppName app" is a note.
 	-->
 
-	<genBlock class="apis">
+	<block blocktype="general" idname="apis">
 		<field>
 			<label>Restful APIs</label>
 			<content>JSON &amp; XML</content>
@@ -27,26 +30,26 @@
 			<content>Apps-Specific API Keys</content>
 		</field>
 		<note>MyGov Open APIs Documentation &amp; Developer Support (developers.mygov.in)</note>
-	</genBlock>
+	</block>
 	
-	<genBlock class="members">
+	<block blocktype="general" idname="members">
 		<field>
 			<label>MyGov Members</label>
 			<content>18734 K</content>
 		</field>
-	</genBlock>
+	</block>
 	
-	<genBlock class="sso">
+	<block blocktype="general" idname="sso">
 		<note>MyGov Auth Single Sign On Social Login Integration</note>
-	</genBlock>
+	</block>
 
-	<genBlock class="apps">
+	<block blocktype="general" idname="apps">
 		<field>
 			<label>Mobile Apps</label>
 			<content>MyGov (iOS, Android)</content>
 			<content>PMO App</content>
 		</field>
-	</genBlock>
+	</block>
 
 
 	<!-- SECTION: Statistics
@@ -68,7 +71,7 @@
 	-->
 
 	<!-- 75:25-display sections -->
-	<statBlock class="engagement">
+	<block blocktype="stats" idname="engagement" headertype="solid">
 		<header>Engagement Models</header>
 
 		<item>
@@ -110,9 +113,9 @@
 			<image><!-- Link will go here --></image>
 			<label>My Survey</label>
 		</item>
-	</statBlock>
+	</block>
 
-	<statBlock class="dissemination">
+	<block blocktype="stats" idname="dissemination" headertype="solid">
 		<header>Dissemination</header>
 
 		<item>
@@ -134,9 +137,9 @@
 			<image><!-- Link will go here --></image>
 			<label>5 Years</label>
 		</item>
-	</statBlock>
+	</block>
 
-	<statBlock class="activities">
+	<block blocktype="stats" idname="activities" headertype="bar">
 		<header>MyGov Activities</header>
 
 		<item>
@@ -174,9 +177,9 @@
 			<label>Blogs</label>
 			<number>869</number>
 		</item>
-	</statBlock>
+	</block>
 
-	<statBlock class="social">
+	<block blocktype="stats" idname="social" headertype="bar">
 		<header>MyGov SOCIAL</header>
 
 		<item>
@@ -206,11 +209,11 @@
 			<number>17.33 Lacs</number>
 			<units>followers</units>
 		</item>
-	</statBlock>
+	</block>
 
 	
 	<!-- Full width display sections -->
-	<statBlock class="saas">
+	<block blocktype="stats" idname="saas" headertype="bar">
 		<header>MyGov SaaS INSTANCES</header>
 
 		<item>
@@ -287,9 +290,9 @@
 			<image><!-- Link will go here --></image>
 			<label>Tamil Nadu</label>
 		</item>
-	</statBlock>
+	</block>
 
-	<statBlock class="archives">
+	<block blocktype="stats" idname="archives" headertype="solid">
 		<header>Archives</header>
 
 		<item>
@@ -343,7 +346,7 @@
 			<image><!-- Link will go here --></image>
 			<label>Merchandise</label>
 		</item>
-	</statBlock>
+	</block>
 
 
 	<!-- Last updated on DD/MM/YYYY -->
