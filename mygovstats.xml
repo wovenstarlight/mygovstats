@@ -52,7 +52,7 @@
 	a slightly smaller size.
 
 	Sections whose items have an icon, some text, and a large statistic number, such as the
-	Activities and Social sections have an <image> tag for the icon, a <label> tag for the
+	Activities and Social sections, have an <image> tag for the icon, a <label> tag for the
 	descriptive text, and a <number> tag for the actual number, at MINIMUM. The Social section
 	also includes a <units> tag, used for the unit which the number is counted in - in "1.7 Lac
 	followers", the <units> tag would contain "followers" while "1.7 Lac" was inside <number>.
