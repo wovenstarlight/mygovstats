@@ -177,4 +177,144 @@
 			<units>followers</units>
 		</item>
 	</statBlock>
+
+	
+	<!-- SECTION: Full width display -->
+	<statBlock class="saas">
+		<header>MyGov SaaS INSTANCES</header>
+
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Haryana</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Maharashtra</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Assam</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Madhya Pradesh</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Tripura</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Manipur</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Arunachal Pradesh</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Chhattisgarh</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Jharkhand</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Nagaland</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Himachal</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Goa</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Uttarakhand</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Uttar Pradesh</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Tamil Nadu</label>
+		</item>
+	</statBlock>
+
+	<statBlock class="archives">
+		<header>Archives</header>
+
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Two Years</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Three Years</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>IVRS</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>SBSI</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>newindia.in</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Go Translate</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>NEP Survey</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Digi-धन</label>
+			<labelSmall>Lucky Grahak Yojana</labelSmall>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Digi-धन</label>
+			<labelSmall>Vyapar Yojana</labelSmall>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Merchandise</label>
+		</item>
+	</statBlock>
+
+	<!-- DD/MM/YYYY -->
+	<updatedOn>09/08/2021</updatedOn>
 </statistics>
