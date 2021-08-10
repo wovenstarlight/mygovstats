@@ -4,7 +4,10 @@
 <?xml-stylesheet type="text/css" href="format/mygovstats.css"?>
 
 <statistics>
-	<!-- SECTION: GENERAL -->
+	<!-- SECTION: GENERAL
+	These are the sections at the very top of the page, under the heading.
+	The information in the genBlocks is text-only, and does not contain any numerical statistics.
+	-->
 	
 	<!-- Format notes:
 	Generally, the genBlock sections use two main types of tags: <field>s and <note>s.
@@ -46,7 +49,10 @@
 	</genBlock>
 
 
-	<!-- Statistic sections -->
+	<!-- SECTION: Statistics
+	These sections contain the numerical statistics and page listings,
+	and will likely be updated more often.
+	-->
 
 	<!-- Format notes:
 	Sections whose items have one main text label along with a logo/icon, such as the Engagement
@@ -61,7 +67,7 @@
 	followers", the <units> tag would contain "followers" while "1.7 Lac" was inside <number>.
 	-->
 
-	<!-- SECTION: Quarters display -->
+	<!-- 75:25-display sections -->
 	<statBlock class="engagement">
 		<header>Engagement Models</header>
 
@@ -203,7 +209,7 @@
 	</statBlock>
 
 	
-	<!-- SECTION: Full width display -->
+	<!-- Full width display sections -->
 	<statBlock class="saas">
 		<header>MyGov SaaS INSTANCES</header>
 
@@ -339,6 +345,7 @@
 		</item>
 	</statBlock>
 
-	<!-- DD/MM/YYYY -->
+
+	<!-- Last updated on DD/MM/YYYY -->
 	<updatedOn>09/08/2021</updatedOn>
 </statistics>
