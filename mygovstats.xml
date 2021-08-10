@@ -34,4 +34,147 @@
 			<content>PMO App</content>
 		</field>
 	</genBlock>
+
+
+	<!-- Statistic sections -->
+	<!-- SECTION: Quarters display -->
+	<statBlock class="engagement">
+		<header>Engagement Models</header>
+
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Events</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Innovate</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Pledge</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Swachh Bharat</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Quiz</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Self4Society</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Task Management</label>
+		</item>
+
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>My Survey</label>
+		</item>
+	</statBlock>
+
+	<statBlock class="dissemination">
+		<header>Dissemination</header>
+
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Blog</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Transforming India</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Live Help</label>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>5 Years</label>
+		</item>
+	</statBlock>
+
+	<statBlock class="activities">
+		<header>MyGov Activities</header>
+
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Ministries</label>
+			<content>53</content>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Talks</label>
+			<content>215</content>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Discussions</label>
+			<content>902</content>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Tasks</label>
+			<content>1068</content>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Poll/Survey</label>
+			<content>253+278</content>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>Blogs</label>
+			<content>869</content>
+		</item>
+	</statBlock>
+
+	<statBlock class="social">
+		<header>MyGov SOCIAL</header>
+
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>MyGov India</label>
+			<content>13.32 Lacs</content>
+			<units>followers</units>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>MyGov India</label>
+			<content>5.77 Lacs</content>
+			<units>views</units>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>@mygovindia</label>
+			<content>2.6 M</content>
+			<units>followers</units>
+		</item>
+		
+		<item>
+			<image><!-- Link will go here --></image>
+			<label>MyGov India</label>
+			<content>17.33 Lacs</content>
+			<units>followers</units>
+		</item>
+	</statBlock>
 </statistics>
