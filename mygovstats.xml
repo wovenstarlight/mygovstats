@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- CSS -->
-<?xml-stylesheet type="text/css" href="css/mygov-stats.css"?>
 
 <statistics>
 	<!-- SECTION: GENERAL -->
+	
+	<!-- Format notes:
+	Generally, the genBlock sections use two main types of tags: <field>s and <note>s.
+	A <field> contains a <label> and <content> and is used for 2-part information,
+	like a key-value pair. e.g. "App used: AppName" is a label-content pair.
+	A <note> is a statement of text that fits in one line with no separation.
+	e.g. "We used AppName app" is a note.
+	-->
+
 	<genBlock class="apis">
 		<field>
 			<label>Restful APIs</label>
@@ -37,6 +44,20 @@
 
 
 	<!-- Statistic sections -->
+
+	<!-- Format notes:
+	Sections whose items have one main text label along with a logo/icon, such as the Engagement
+	Models, Dissemination, Archives, and SaaS sections, have an <image> tag and a <label> tag
+	at MINIMUM. Optionally, they can also have a labelSmall tag, which will add extra text at
+	a slightly smaller size.
+
+	Sections whose items have an icon, some text, and a large statistic number, such as the
+	Activities and Social sections have an <image> tag for the icon, a <label> tag for the
+	descriptive text, and a <number> tag for the actual number, at MINIMUM. The Social section
+	also includes a <units> tag, used for the unit which the number is counted in - in "1.7 Lac
+	followers", the <units> tag would contain "followers" while "1.7 Lac" was inside <number>.
+	-->
+
 	<!-- SECTION: Quarters display -->
 	<statBlock class="engagement">
 		<header>Engagement Models</header>
@@ -112,37 +133,37 @@
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>Ministries</label>
-			<content>53</content>
+			<number>53</number>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>Talks</label>
-			<content>215</content>
+			<number>215</number>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>Discussions</label>
-			<content>902</content>
+			<number>902</number>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>Tasks</label>
-			<content>1068</content>
+			<number>1068</number>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>Poll/Survey</label>
-			<content>253+278</content>
+			<number>253+278</number>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>Blogs</label>
-			<content>869</content>
+			<number>869</number>
 		</item>
 	</statBlock>
 
@@ -152,28 +173,28 @@
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>MyGov India</label>
-			<content>13.32 Lacs</content>
+			<number>13.32 Lacs</number>
 			<units>followers</units>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>MyGov India</label>
-			<content>5.77 Lacs</content>
+			<number>5.77 Lacs</number>
 			<units>views</units>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>@mygovindia</label>
-			<content>2.6 M</content>
+			<number>2.6 M</number>
 			<units>followers</units>
 		</item>
 		
 		<item>
 			<image><!-- Link will go here --></image>
 			<label>MyGov India</label>
-			<content>17.33 Lacs</content>
+			<number>17.33 Lacs</number>
 			<units>followers</units>
 		</item>
 	</statBlock>
