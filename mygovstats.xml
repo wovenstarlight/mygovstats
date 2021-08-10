@@ -4,8 +4,7 @@
 
 <statistics>
 	<!-- SECTION: GENERAL -->
-	<genBlock>
-		<class>apis</class>
+	<genBlock class="apis">
 		<field>
 			<label>Restful APIs</label>
 			<content>JSON &amp; XML</content>
@@ -17,21 +16,18 @@
 		<note>MyGov Open APIs Documentation &amp; Developer Support (developers.mygov.in)</note>
 	</genBlock>
 	
-	<genBlock>
-		<class>members</class>
+	<genBlock class="members">
 		<field>
 			<label>MyGov Members</label>
 			<content>18734 K</content>
 		</field>
 	</genBlock>
 	
-	<genBlock>
-		<class>sso</class>
+	<genBlock class="sso">
 		<note>MyGov Auth Single Sign On Social Login Integration</note>
 	</genBlock>
 
-	<genBlock>
-		<class>apps</class>
+	<genBlock class="apps">
 		<field>
 			<label>Mobile Apps</label>
 			<content>MyGov (iOS, Android)</content>
