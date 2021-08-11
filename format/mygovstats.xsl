@@ -5,6 +5,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
 	<html>
+	<head>
+		<link rel="stylesheet" href="format/reset.css"/>
+		<link rel="stylesheet" href="format/mygovstats.css"/>
+	</head>
+	
 	<body>
 		<header>
 			<h1>MyGov Ecosystem and Its Open APIs</h1>

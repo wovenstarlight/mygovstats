@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Formatting -->
+<!-- HTML formatting -->
 <?xml-stylesheet type="text/xsl" href="format/mygovstats.xsl"?>
-<?xml-stylesheet type="text/css" href="format/mygovstats.css"?>
 
 <statistics>
 	<!-- All <block> elements contain visually distinct sections/divs of content.
