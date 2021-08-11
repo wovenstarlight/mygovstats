@@ -6,17 +6,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
 	<html>
 	<body>
-    <header>
-		<h1>MyGov Ecosystem and Its Open APIs</h1>
-    </header>
+		<header>
+			<h1>MyGov Ecosystem and Its Open APIs</h1>
+		</header>
 
-    <main>
-		<section class="general">
-			<xsl:apply-templates select="statistics/block[@blocktype='general']" />
-		</section>
+		<main>
+			<section class="general">
+				<xsl:apply-templates select="statistics/block[@blocktype='general']" />
+			</section>
 
-		<p>Last updated on <xsl:value-of select="statistics/updatedOn" /></p>
-    </main>
+			<xsl:apply-templates select="statistics/block[@blocktype='stats']" />
+
+			<p>Last updated on <xsl:value-of select="statistics/updatedOn" /></p>
+		</main>
 	</body>
 	</html>
 </xsl:template>
@@ -51,13 +53,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<h2><xsl:value-of select="header" /></h2>
 
 		<!-- Items: print image with label (and optional small label) -->
+		<ul>
 		<xsl:for-each select="item">
-			<xsl:apply-templates select="image" />
-			<p>
-				<xsl:value-of select="label" />
-				<xsl:apply-templates select="labelSmall" />
-			</p>
+			<li>
+				<xsl:apply-templates select="image" />
+				<p>
+					<xsl:value-of select="label" />
+					<xsl:apply-templates select="labelSmall" />
+				</p>
+			</li>
 		</xsl:for-each>
+		</ul>
 	</section>
 </xsl:template>
 
@@ -69,6 +75,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<img src="{$link}" />
 </xsl:template>
 
+<!-- Smaller text for statBlock.solid labels -->
 <xsl:template match="labelSmall">
 	<br /><small><xsl:value-of select="." /></small>
 </xsl:template>
