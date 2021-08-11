@@ -42,12 +42,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	</ul>
 </xsl:template>
 
-<!-- General statsblock content here -->
-<xsl:template match="block[@blocktype='stats']">
+<!-- SECTION: Statistics -->
+<!-- Solid-header statBlock formatting -->
+<xsl:template match="block[@headertype='solid']">
 	<xsl:variable name="idname" select="./@idname" />
-	<xsl:variable name="sectionstyle" select="./@headertype" />
-	<section id="{$idname}" class="{$sectionstyle}">
-	[other stuff here...]
+	<section id="{$idname}" class="solid">
+		<!-- Header -->
+		<h2><xsl:value-of select="header" /></h2>
+
+		<!-- Items: print image with label (and optional small label) -->
+		<xsl:for-each select="item">
+			<xsl:apply-templates select="image" />
+			<p>
+				<xsl:value-of select="label" />
+				<xsl:apply-templates select="labelSmall" />
+			</p>
+		</xsl:for-each>
 	</section>
 </xsl:template>
 
@@ -57,6 +67,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:variable name="link" select="." />
 	<!-- And use it as the link -->
 	<img src="{$link}" />
+</xsl:template>
+
+<xsl:template match="labelSmall">
+	<br /><small><xsl:value-of select="." /></small>
 </xsl:template>
 
 </xsl:stylesheet>
