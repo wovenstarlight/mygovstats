@@ -67,6 +67,29 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	</section>
 </xsl:template>
 
+<!-- Bar-header statBlock formatting -->
+<xsl:template match="block[@headertype='bar']">
+	<xsl:variable name="idname" select="./@idname" />
+	<section id="{$idname}" class="bar">
+		<!-- Header -->
+		<h2><xsl:value-of select="header" /></h2>
+
+		<!-- Items: print image with label, stats (and optional units) -->
+		<ul>
+		<xsl:for-each select="item">
+			<li>
+				<xsl:apply-templates select="image" />
+				<p>
+					<xsl:value-of select="label" />
+					<xsl:apply-templates select="number" />
+					<xsl:value-of select="units" />
+				</p>
+			</li>
+		</xsl:for-each>
+		</ul>
+	</section>
+</xsl:template>
+
 <!-- Generate image -->
 <xsl:template match="image">
 	<!-- Store the value of the image tag itself -->
@@ -78,6 +101,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <!-- Smaller text for statBlock.solid labels -->
 <xsl:template match="labelSmall">
 	<br /><small><xsl:value-of select="." /></small>
+</xsl:template>
+
+<!-- Print actual numbers for statBlock.bar statistics -->
+<xsl:template match="number">
+	<strong><xsl:value-of select="." /></strong>
 </xsl:template>
 
 </xsl:stylesheet>
