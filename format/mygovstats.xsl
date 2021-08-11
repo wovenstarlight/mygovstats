@@ -22,25 +22,46 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <!-- SECTION: General. genBlocks get styled individually -->
-<xsl:template match="block[@blocktype='general']">
-	<xsl:variable name="idname" select="./@idname" />
-	<div id="idname">
+<xsl:template match="note">
+	<p><xsl:value-of select="."/></p>
+</xsl:template>
+
+<xsl:template match="block[@idname='apis']">
+	<div id="apis">
+		<table>
+			<xsl:for-each select="field">
+				<tr>
+					<td><xsl:value-of select="label"/></td>
+					<td><xsl:value-of select="content"/></td>
+				</tr>
+			</xsl:for-each>
+		</table>
+		<xsl:apply-templates select="note"/>
+	</div>
+</xsl:template>
+
+<xsl:template match="block[@idname='members']">
+	<div id="members">
+		<p><xsl:value-of select="field/label"/></p>
+		<p><xsl:value-of select="field/content"/></p>
+	</div>
+</xsl:template>
+
+<xsl:template match="block[@idname='sso']">
+	<div id="sso">
 		<xsl:apply-templates />
 	</div>
 </xsl:template>
 
-<xsl:template match="block[@idname='apis']">
-	<table>
-		<xsl:for-each select="field">
-			<tr>
-				<td><xsl:value-of select="label"/></td>
-				<td><xsl:value-of select="content"/></td>
-			</tr>
-		</xsl:for-each>
-	</table>
-	<xsl:for-each select="note">
-		<p><xsl:value-of select="."/></p>
-	</xsl:for-each>
+<xsl:template match="block[@idname='apps']">
+	<div id="apps">
+		<p><xsl:value-of select="field/label"/></p>
+		<ul>
+			<xsl:for-each select="field/content">
+				<li><xsl:value-of select="."/></li>
+			</xsl:for-each>
+		</ul>
+	</div>
 </xsl:template>
 
 <!-- General statsblock content here -->
