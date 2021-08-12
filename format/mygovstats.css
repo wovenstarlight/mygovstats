@@ -124,7 +124,6 @@ header h1::before {
 #apis ul { position: relative; }
 #apis ul::before {
 	content: url("images/arrows.svg");
-	filter: invert(); /* Since they're black instead of currentColor for some reason */
 	display: block;
 	width: 1.2em; /* In a gap of 2em, leaves 0.4em on either side */
 	position: absolute;
@@ -180,7 +179,6 @@ header h1::before {
 }
 #members p::before {
 	content: url("images/members.svg");
-	filter: invert();
 	width: 1.75em;
 	padding-right: 0.5em;
 	flex-shrink: 0;
