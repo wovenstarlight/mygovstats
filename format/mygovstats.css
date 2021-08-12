@@ -65,24 +65,26 @@
 /* Page styles */
 body {
 	font-family: "Myriad Pro", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
+	font-weight: 600;
 	color: #fff;
 	background: #333;
 }
+
+* { box-sizing: border-box; }
 
 /* MyGov Ecosystem header */
 header {
 	background: #054c88;
 	font-size: 1.75em;
-	font-weight: 600;
-	width: 15em;
+	width: 17em;
 	margin: auto;
 	padding: 0.5em;
 }
 header h1 {
 	display: grid;
-	grid-template-columns: 1fr 1.5fr;
-	column-gap: 0.25em;
+	grid-template-columns: 1fr 1.3fr;
+	column-gap: 0.5em;
 	align-items: center;
 }
 header h1::before {
@@ -90,6 +92,6 @@ header h1::before {
 	display: block;
 	width: 5em;
 	justify-self: right;
-	padding-right: 0.25em;
+	padding-right: 0.5em;
 	border-right: 1px solid #fff6;
 }
