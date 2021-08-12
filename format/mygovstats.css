@@ -103,6 +103,7 @@ header h1::before {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	row-gap: 1em;
+	column-gap: 1.5em;
 	justify-items: center;
 }
 .general div { width: 100%; }
@@ -195,4 +196,59 @@ header h1::before {
 #members ul {
 	font-size: 1.5em;
 	font-weight: bold;
+}
+
+/* General: Doubles section */
+#sso, #apps {
+	max-width: 20em;
+	padding: 0.5em 2em;
+}
+
+/* Single Sign On section */
+#sso {
+	background: #d0b601;
+	border-radius: 0 1.5em;
+	justify-self: right;
+}
+#sso p {
+	justify-self: right;
+	display: flex;
+	align-items: center;
+	text-align: right;
+}
+#sso p::before {
+	content: url("images/sso.svg");
+	width: 2.5em;
+	padding-right: 0.5em;
+	flex-shrink: 0;
+}
+
+/* Mobile Apps section */
+#apps {
+	background: #02ba94;
+	border-radius: 1.5em 0;
+	justify-self: left;
+	display: flex;
+	align-items: center;
+}
+#apps ul { flex-shrink: 0; position: relative; }
+#apps ul::before {
+	content: "";
+	display: block;
+	border-right: 1px solid;
+	height: 100%;
+	position: absolute;
+	left: -0.5em;
+}
+#apps li { display: flex; align-items: center; }
+#apps li::before {
+	content: ">";
+	font-size: 0.6em;
+	padding-right: 0.5em;
+}
+#apps::after {
+	content: url("images/apps.svg");
+	width: 1.5em;
+	padding-left: 0.5em;
+	flex-shrink: 0;
 }
