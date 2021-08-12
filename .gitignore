@@ -1,2 +1,6 @@
 #ignore files used to test on w3schools' xml/xsl tool
 *w3*
+
+#ignore the extraneous font files
+example.html
+style.css
