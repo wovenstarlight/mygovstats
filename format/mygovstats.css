@@ -80,7 +80,7 @@ header {
 	font-size: 2.5em;
 	max-width: 17em;
 	margin: auto;
-	padding: 0.5em;
+	padding: 0.25em 0.5em;
 }
 header h1 {
 	display: grid;
@@ -266,15 +266,17 @@ header h1::before {
 	margin: 0.5em 0;
 	width: 100%;
 }
+.stats h2 {
+	font-size: 1.3em;
+	text-align: center;
+	padding: 0.25em 1em;
+}
 
 /* Solid-header statBlocks */
 .solid h2 {
 	background: rgb(var(--section-bg), 100%);
 	text-transform: uppercase;
-	font-size: 1.3em;
-	text-align: center;
 	border-radius: 1em;
-	padding: 0.25em 1em;
 }
 .solid ul {
 	margin: 0.5em 0;
@@ -332,6 +334,37 @@ header h1::before {
 	width: 85%;
 }
 
+/* Consistent styling for headers of bar-type statBlocks */
+.bar { padding-top: 0.25em;}
+.bar h2 {
+	color: var(--color);
+	background: white;
+	padding: 0.25em 0.5em;
+	margin: auto;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	position: relative;
+	top: -1em;
+}
+.bar::before {
+	content: "";
+	background: var(--color);
+	display: block;
+	width: 100%;
+	height: 0.25em;
+}
+
+/* Activities section */
+#activities { --color: #725c29; }
+
+/* MyGov Social section */
+#social { --color: #ee5747; }
+
+/* MyGov SaaS section */
+#saas { --color: #bf8b00; }
+
+/* Spanning SaaS and Archives sections across full page width */
 #saas, #archives { grid-column: 1 / span 2; }
 
 
@@ -341,6 +374,7 @@ main > p:last-child {
 	color: #616161;
 	font-size: 1em;
 	text-align: center;
+	margin: 1em;
 }
 
 
