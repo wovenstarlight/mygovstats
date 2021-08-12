@@ -77,7 +77,7 @@ body {
 header {
 	background: #054c88;
 	font-size: 1.75em;
-	width: 17em;
+	max-width: 17em;
 	margin: auto;
 	padding: 0.5em;
 }
@@ -98,15 +98,21 @@ header h1::before {
 
 
 /* General section */
-.general div {
-	margin: auto;
+.general {
+	margin: 1em 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 1em;
+	justify-items: center;
 }
+.general div { width: 100%; }
 
 /* APIs section */
 #apis {
+	grid-column: 1 / span 2;
 	background: #de55a0;
-	width: 27.5em;
-	margin: 1.5em auto;
+	max-width: 27.5em;
+	margin-bottom: 1em;
 	padding: 0.5em 1.5em;
 	border-radius: 1em 1em 0 0;
 	display: grid;
@@ -117,7 +123,7 @@ header h1::before {
 #apis p { text-align: right; }
 #apis ul { position: relative; }
 #apis ul::before {
-	content: url("arrows.svg");
+	content: url("images/arrows.svg");
 	filter: invert(); /* Since they're black instead of currentColor for some reason */
 	display: block;
 	width: 1.2em; /* In a gap of 2em, leaves 0.4em on either side */
@@ -149,4 +155,46 @@ header h1::before {
 #apis::after {
 	right: 0;
 	border-right-color: transparent;
+}
+
+/* Members box */
+#members {
+	grid-column: 1 / span 2;
+	background: #194e90;
+	max-width: 27.5em;
+	padding: 0.5em 1.5em;
+	border-radius: 0 1.5em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1em;
+	align-items: center;
+}
+/* "MyGov Members" label */
+#members p {
+	width: 6.5em;
+	justify-self: right;
+	display: flex;
+	align-items: center;
+	position: relative;
+	text-align: right;
+}
+#members p::before {
+	content: url("images/members.svg");
+	filter: invert();
+	width: 1.75em;
+	padding-right: 0.5em;
+	flex-shrink: 0;
+}
+#members p::after {
+	content: "";
+	display: block;
+	border-right: 0.1em solid;
+	height: 100%;
+	position: absolute;
+	right: -0.65em;
+}
+/* Number of members */
+#members ul {
+	font-size: 1.5em;
+	font-weight: bold;
 }
