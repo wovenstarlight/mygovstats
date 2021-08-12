@@ -65,8 +65,9 @@
 /* Page styles */
 body {
 	font-family: "Myriad Pro", sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
+	padding: 0 1em 2em;
 	color: #fff;
 	background: #333;
 }
@@ -251,4 +252,25 @@ header h1::before {
 	width: 1.5em;
 	padding-left: 0.5em;
 	flex-shrink: 0;
+}
+
+
+/* TODO: Statistics sections */
+
+
+/* Last updated paragraph */
+main > p:last-child {
+	font-weight: normal;
+	color: #616161;
+	font-size: 1em;
+	text-align: center;
+}
+
+
+/* Size adjustments for smaller screens */
+@media (max-width: 1000px) {
+	body { font-size: 16px; }
+}
+@media (max-width: 700px) {
+	body { font-size: 12px; }
 }
