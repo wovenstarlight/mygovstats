@@ -255,7 +255,84 @@ header h1::before {
 }
 
 
-/* TODO: Statistics sections */
+/* Statistics sections */
+.stats {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 1.5em;
+	justify-items: center;
+}
+.stats section {
+	margin: 0.5em 0;
+	width: 100%;
+}
+
+/* Solid-header statBlocks */
+.solid h2 {
+	background: rgb(var(--section-bg), 100%);
+	text-transform: uppercase;
+	font-size: 1.3em;
+	text-align: center;
+	border-radius: 1em;
+	padding: 0.25em 1em;
+}
+.solid ul {
+	margin: 0.5em 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	column-gap: 0.5em;
+	row-gap: 0.5em;
+	justify-items: center;
+}
+.solid li {
+	background-color: rgba(var(--section-bg), 0.3);
+	color: rgb(var(--section-text));
+	font-size: 0.9em;
+	border: 2px solid rgba(var(--section-bg), 0.75);
+	border-radius: 5em;
+	padding: 0 1em;
+	width: 100%;
+	min-height: 4em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1.5em;
+	align-items: center;
+	position: relative;
+	line-height: 1;
+}
+.solid li img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	max-height: 2.5em;
+	max-width: 100%;
+	justify-self: center;
+}
+.solid li small { font-size: 0.7em; }
+.solid li::after {
+	content: "";
+	border-right: 0.1em solid rgba(var(--section-text), 0.5);
+	height: 85%;
+	position: absolute;
+	left: 50%;
+}
+
+/* RGB colors for background/text of solid-header statBlocks */
+#engagement {
+	--section-bg: 31, 132, 220;
+	--section-text: 5, 76, 136;
+}
+#dissemination {
+	--section-bg: 130, 180, 31;
+	--section-text: 20, 139, 0;
+}
+#archives {
+	--section-bg: 194, 84, 147;
+	--section-text: 145, 54, 104;
+	width: 85%;
+}
+
+#saas, #archives { grid-column: 1 / span 2; }
 
 
 /* Last updated paragraph */
