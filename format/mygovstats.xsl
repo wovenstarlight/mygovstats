@@ -20,7 +20,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:apply-templates select="statistics/block[@blocktype='general']" />
 			</section>
 
-			<xsl:apply-templates select="statistics/block[@blocktype='stats']" />
+			<div class="stats">
+				<xsl:apply-templates select="statistics/block[@blocktype='stats']" />
+			</div>
 
 			<p>Last updated on <xsl:value-of select="statistics/updatedOn" /></p>
 		</main>
