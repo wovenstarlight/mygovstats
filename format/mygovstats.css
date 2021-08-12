@@ -95,3 +95,58 @@ header h1::before {
 	padding-right: 0.5em;
 	border-right: 1px solid #fff6;
 }
+
+
+/* General section */
+.general div {
+	margin: auto;
+}
+
+/* APIs section */
+#apis {
+	background: #de55a0;
+	width: 27.5em;
+	margin: 1.5em auto;
+	padding: 0.5em 1.5em;
+	border-radius: 1em 1em 0 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2em;
+	position: relative;
+}
+#apis p { text-align: right; }
+#apis ul { position: relative; }
+#apis ul::before {
+	content: url("arrows.svg");
+	filter: invert(); /* Since they're black instead of currentColor for some reason */
+	display: block;
+	width: 1.2em; /* In a gap of 2em, leaves 0.4em on either side */
+	position: absolute;
+	top: 0;
+	left: -1.6em; /* 1.2 + 0.4 */
+}
+#apis p:last-child {
+	padding-top: 0.3em;
+	grid-column: 1 / span 2;
+	text-align: center;
+}
+/* The little banner triangles at the bottom/"back" */
+#apis::before, #apis::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-color: #a9377e;
+	border-style: solid;
+	border-width: 0.5em 1.5em;
+	border-bottom-color: transparent;
+	top: 100%;
+}
+#apis::before {
+	left: 0;
+	border-left-color: transparent;
+}
+#apis::after {
+	right: 0;
+	border-right-color: transparent;
+}
