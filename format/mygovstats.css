@@ -366,7 +366,6 @@ header h1::before {
 	column-gap: 0.5em;
 	row-gap: 0.5em;
 	justify-items: center;
-	grid-gap: 1
 }
 #activities li, #activities li p {
 	display: flex;
