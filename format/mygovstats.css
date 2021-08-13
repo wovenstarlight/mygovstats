@@ -355,24 +355,34 @@ header h1::before {
 	height: 0.25em;
 }
 
-/* Activities section */
-#activities {
-	--color: #725c29;
-	--bubble-size: 7em;
-}
-#activities ul {
+/* Setting up item display for Activities and Social sections */
+#activities ul, #social ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(var(--bubble-size), 1fr));
 	column-gap: 0.5em;
-	row-gap: 0.5em;
 	justify-items: center;
 }
-#activities li, #activities li p {
+#activities li, #activities li p,
+#social li, #social li p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+#activities li img, #social li img {
+	width: 100%;
+	height: 100%;
+	max-width: var(--size);
+	max-height: var(--size);
+	margin-bottom: 0.25em;
+}
+
+/* Activities section */
+#activities {
+	--color: #725c29;
+	--bubble-size: 7em;
+}
+#activities ul { row-gap: 0.5em; }
 #activities li {
 	font-weight: normal;
 	width: var(--bubble-size);
@@ -384,17 +394,50 @@ header h1::before {
 	font-weight: bold;
 	font-size: 1.3em;
 }
-#activities li img {
-	--size: 2em;
-	width: 100%;
-	height: 100%;
-	max-width: var(--size);
-	max-height: var(--size);
-	margin-bottom: 0.25em;
-}
+#activities li img { --size: 2em; }
 
 /* MyGov Social section */
-#social { --color: #ee5747; }
+#social {
+	--color: #ee5747;
+	--bubble-size: 6.5em;
+	--hex-height: 1.5em;
+}
+#social ul {
+	margin: var(--hex-height) 0 calc(var(--hex-height) + 0.5em);
+	row-gap: calc(var(--hex-height) * 2 + 0.5em);
+}
+#social li {
+	width: var(--bubble-size);
+	background: var(--bg-color) center;
+	position: relative;
+}
+#social li p {
+	font-weight: normal;
+	font-size: 0.75em;
+	line-height: 1.05;
+}
+#social li strong {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+#social li::before, #social li::after {
+	content: "";
+	display: block;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: var(--hex-height) calc(var(--bubble-size) / 2);
+	position: absolute;
+}
+#social li::before {
+	border-bottom-color: var(--bg-color);
+	top: calc(-2 * var(--hex-height));
+}
+#social li::after {
+	border-top-color: var(--bg-color);
+	bottom: calc(-2 * var(--hex-height));
+}
+#social li img { --size: 1.25em; }
 
 /* MyGov SaaS section */
 #saas { --color: #bf8b00; }
