@@ -32,7 +32,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <!-- SECTION: General -->
 <xsl:template match="block[@blocktype='general']">
-	<xsl:variable name="idname" select="./@idname" />
+	<xsl:variable name="idname" select="@idname" />
 	<div id="{$idname}">
 		<xsl:apply-templates />
 	</div>
@@ -54,7 +54,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <!-- SECTION: Statistics -->
 <!-- Solid-header statBlock formatting -->
 <xsl:template match="block[@headertype='solid']">
-	<xsl:variable name="idname" select="./@idname" />
+	<xsl:variable name="idname" select="@idname" />
 	<section id="{$idname}" class="solid">
 		<!-- Header -->
 		<h2><xsl:value-of select="header" /></h2>
@@ -76,7 +76,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <!-- Bar-header statBlock formatting -->
 <xsl:template match="block[@headertype='bar']">
-	<xsl:variable name="idname" select="./@idname" />
+	<xsl:variable name="idname" select="@idname" />
 	<section id="{$idname}" class="bar">
 		<!-- Header -->
 		<h2><xsl:value-of select="header" /></h2>
@@ -84,7 +84,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<!-- Items: print image with label, stats (and optional units) -->
 		<ul>
 		<xsl:for-each select="item">
-			<li>
+			<xsl:variable name="bg-color">
+				<xsl:choose>
+					<xsl:when test="@bg-color">
+						background-color: <xsl:value-of select="@bg-color" />
+					</xsl:when>
+					<xsl:otherwise></xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<li style="{$bg-color}">
 				<xsl:apply-templates select="image" />
 				<p>
 					<xsl:value-of select="label" />

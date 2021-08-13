@@ -141,37 +141,37 @@
 	<block blocktype="stats" idname="activities" headertype="bar">
 		<header>MyGov Activities</header>
 
-		<item>
+		<item bg-color="#5aa62a">
 			<image><!-- Link will go here --></image>
 			<label>Ministries</label>
 			<number>53</number>
 		</item>
 		
-		<item>
+		<item bg-color="#cb0c5c">
 			<image><!-- Link will go here --></image>
 			<label>Talks</label>
 			<number>215</number>
 		</item>
 		
-		<item>
+		<item bg-color="#1a95bf">
 			<image><!-- Link will go here --></image>
 			<label>Discussions</label>
 			<number>902</number>
 		</item>
 		
-		<item>
+		<item bg-color="#de7519">
 			<image><!-- Link will go here --></image>
 			<label>Tasks</label>
 			<number>1068</number>
 		</item>
 		
-		<item>
+		<item bg-color="#2cbbc1">
 			<image><!-- Link will go here --></image>
 			<label>Poll/Survey</label>
 			<number>253+278</number>
 		</item>
 		
-		<item>
+		<item bg-color="#fbb12c">
 			<image><!-- Link will go here --></image>
 			<label>Blogs</label>
 			<number>869</number>
@@ -181,28 +181,28 @@
 	<block blocktype="stats" idname="social" headertype="bar">
 		<header>MyGov SOCIAL</header>
 
-		<item>
+		<item bg-color="#3b64bc">
 			<image>format/images/facebook.svg</image>
 			<label>MyGov India</label>
 			<number>13.32 Lacs</number>
 			<units>followers</units>
 		</item>
 		
-		<item>
+		<item bg-color="#e84c3d">
 			<image>format/images/youtube.svg</image>
 			<label>MyGov India</label>
 			<number>5.77 Lacs</number>
 			<units>views</units>
 		</item>
 		
-		<item>
+		<item bg-color="#00b1e7">
 			<image>format/images/twitter.svg</image>
 			<label>@mygovindia</label>
 			<number>2.6 M</number>
 			<units>followers</units>
 		</item>
 		
-		<item>
+		<item bg-color="#9e32aa">
 			<image>format/images/instagram.svg</image>
 			<label>MyGov India</label>
 			<number>17.33 Lacs</number>
