@@ -398,16 +398,15 @@ header h1::before {
 /* MyGov Social section */
 #social {
 	--color: #ee5747;
-	--bubble-size: 6.25em;
-	--hex-height: 1.5em;
+	--bubble-size: 7.3em;
+	--hex-height: 2em;
 }
 #social ul {
-	margin: var(--hex-height) 0 calc(var(--hex-height) + 0.5em);
-	row-gap: calc(var(--hex-height) * 2 + 0.5em);
+	padding: 1.4em 0;
+	row-gap: calc(var(--hex-height) + 1.25em);
 }
 #social li {
 	width: var(--bubble-size);
-	background: var(--bg-color) center;
 	position: relative;
 }
 #social li p {
@@ -419,22 +418,12 @@ header h1::before {
 	font-size: 1.4em;
 	font-weight: 700;
 }
-#social li::before, #social li::after {
-	content: "";
-	display: block;
-	height: 0;
-	border-color: transparent;
-	border-style: solid;
-	border-width: var(--hex-height) calc(var(--bubble-size) / 2);
-	position: absolute;
-}
 #social li::before {
-	border-bottom-color: var(--bg-color);
-	top: calc(-2 * var(--hex-height));
-}
-#social li::after {
-	border-top-color: var(--bg-color);
-	bottom: calc(-2 * var(--hex-height));
+	content: "\2B22";
+	color: var(--bg-color);
+	position: absolute;
+	font-size: calc(var(--bubble-size) + var(--hex-height));
+	z-index: -1;
 }
 #social li img { --size: 1.25em; }
 
