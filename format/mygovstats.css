@@ -69,7 +69,6 @@ body {
 	font-weight: 600;
 	padding: 0 1em 2em;
 	color: #fff;
-	background: #aaa; /* only used while WIP; to see white text of unstyled sections */
 }
 
 * { box-sizing: border-box; }
@@ -281,7 +280,7 @@ header h1::before {
 .solid ul {
 	margin: 0.5em 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
 	column-gap: 0.5em;
 	row-gap: 0.5em;
 	justify-items: center;
@@ -355,8 +354,8 @@ header h1::before {
 	height: 0.25em;
 }
 
-/* Setting up item display for Activities and Social sections */
-#activities ul, #social ul {
+/* Setting up item display for Activities, Social, and SaaS sections */
+#activities ul, #social ul, #saas ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(var(--bubble-size), 1fr));
 	column-gap: 0.5em;
@@ -440,7 +439,29 @@ header h1::before {
 #social li img { --size: 1.25em; }
 
 /* MyGov SaaS section */
-#saas { --color: #bf8b00; }
+#saas {
+	--color: #bf8b00;
+	--bubble-size: 7em;
+	text-align: center;
+	width: 85%;
+}
+#saas ul {
+	margin: auto;
+	column-gap: 2em;
+	row-gap: 1em;
+}
+#saas p {
+	color: black;
+	font-size: 0.9em;
+}
+#saas img {
+	background: #093c71;
+	border-radius: 100%;
+	padding: 0.5em;
+	object-fit: contain;
+	width: var(--bubble-size);
+	height: var(--bubble-size);
+}
 
 /* Spanning SaaS and Archives sections across full page width */
 #saas, #archives { grid-column: 1 / span 2; }
@@ -458,8 +479,16 @@ main > p:last-child {
 
 /* Size adjustments for smaller screens */
 @media (max-width: 1000px) {
-	body { font-size: 16px; }
+	body { font-size: 18px; }
+}
+@media (max-width: 950px) {
+	#engagement, #dissemination { grid-column: 1 / span 2; }
+}
+@media (max-width: 850px) {
+	body { font-size: 15px; }
 }
 @media (max-width: 700px) {
 	body { font-size: 12px; }
+	#activities, #social { grid-column: 1 / span 2; }
+	#saas, #archives { width: 100%; }
 }
