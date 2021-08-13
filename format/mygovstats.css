@@ -379,6 +379,7 @@ header h1::before {
 	width: var(--bubble-size);
 	height: var(--bubble-size);
 	border-radius: 100%;
+	background-color: var(--bg-color);
 }
 #activities li strong {
 	font-weight: bold;

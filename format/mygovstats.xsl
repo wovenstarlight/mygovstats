@@ -87,7 +87,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 			<xsl:variable name="bg-color">
 				<xsl:choose>
 					<xsl:when test="@bg-color">
-						background-color: <xsl:value-of select="@bg-color" />
+						--bg-color: <xsl:value-of select="@bg-color" />
 					</xsl:when>
 					<xsl:otherwise></xsl:otherwise>
 				</xsl:choose>
