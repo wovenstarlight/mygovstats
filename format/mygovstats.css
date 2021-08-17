@@ -410,7 +410,7 @@ header h1::before {
 }
 #social ul {
 	padding: 1.4em 0;
-	row-gap: calc(var(--hex-height) + 1.25em);
+	row-gap: calc(var(--hex-height) + 0.5em);
 }
 #social li {
 	width: var(--bubble-size);
