@@ -1,1 +1,12 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-alt" class="svg-inline--fa fa-mobile-alt fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#ffffff" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 53" width="36" height="53">
+	<title>MyGov Open APIs  To Interface with In-house &amp; External  ICT Sys</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g >
+		<g >
+			<path fill-rule="evenodd" class="shp0" d="M4.5 0L31.48 0C33.97 0 35.98 1.98 35.98 4.42L35.98 48.58C35.98 51.02 33.97 53 31.48 53L4.5 53C2.01 53 0 51.02 0 48.58L0 4.42C0 1.98 2.01 0 4.5 0ZM4.5 41.96L31.48 41.96L31.48 6.62L4.54 6.62L4.5 41.96ZM11.24 4.42L22.63 4.42L22.49 2.21L11.24 2.21L11.24 4.42ZM15.69 47.48C15.69 48.7 16.7 49.68 17.94 49.68C19.19 49.68 20.19 48.7 20.19 47.48C20.19 46.26 19.19 45.27 17.94 45.27C16.7 45.27 15.69 46.26 15.69 47.48Z" />
+		</g>
+	</g>
+</svg>
